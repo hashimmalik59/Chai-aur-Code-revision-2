@@ -17,5 +17,3 @@ let score = 23
 ++score // pre incremenet/pre plus
 score++ // post incremenet/post plus
 console.log(score);
-
-
