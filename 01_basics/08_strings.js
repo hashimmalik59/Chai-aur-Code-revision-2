@@ -11,7 +11,7 @@ let fullName = ("Hashim Ahmad Malik")
 // console.log(fullName.toUpperCase());
 // console.log(fullName.charAt(2)); // give the index and get the character
 // console.log(fullName.indexOf('k')); // finding character according to the given number
-console.log(fullName.substring(-6, 5)); // give the index and get the character
+console.log(fullName.substring(-7, 6)); // give the index and get the character
 // console.log(fullName.trim()); // it will remove the unwanted spaces
 // console.log(fullName.slice(7, 12)); // returns elements of an array
 // let url = "www.linkedin.com/hashimmalik59/"
