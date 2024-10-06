@@ -32,8 +32,10 @@ let newAge = new Number(12000)
 // console.log(Math.min(2, 3, 8, 4, 0));
 // console.log(Math.max(2, 3, 8, 4, 0));
 
-
 // console.log(Math.floor(Math.random() * 6 + 1)); // it will generate the random number
+let number = -343
+console.log(Math.abs(-343));
+
 
 // let min = 10
 // let max = 20
@@ -88,11 +90,8 @@ function notANumber(a, b) {
 // In JavaScript, why does the expression 0.1 + 0.2 === 0.3 return false? How can this be fixed?
 let num1 = 0.1
 let num2 = 0.2
-let num4 = toFixed(num1)
-let num5 = toFixed(num2)
-let num6 = num4 + num5
 let num3 = 0.3
-console.log(num3 === num6); // false
+// console.log(num3 === num1 + num2); // false
 
 
 
