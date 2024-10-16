@@ -1,5 +1,5 @@
-// Global Scope: Accessing out of block scope
-// Block Scope: Accessing in side of block scope
+// Global Scope: Outside any function is Global scope
+// Block Scope: Accessing in side of Block scope
 
 if (true) {
     var a = 10 // var is global scope accessing every where
