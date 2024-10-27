@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creating new Element in DOM</title>
+  </head>
+  <body style="background-color: #000; color: #fff"></body>
+  <script>
+    let container = document.createElement("div");
+    console.log(container);
+    container.className = "class";
+    container.id = "id";
+    container.style.color = "red";
+    // container.innerHTML = "my Container" // Not a good practice
+    let text = document.createTextNode("DOM Learning | Chai aur Code"); // Best practice of adding text
+    container.appendChild(text);
+    document.body.appendChild(container);
+  </script>
+</html>
