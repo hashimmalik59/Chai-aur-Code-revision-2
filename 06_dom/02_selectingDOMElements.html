@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selecting DOM Elements</title>
+  </head>
+  <body style="background-color: #000; color: #fff">
+    <div class="workingDays">
+      <div class="days">Monday</div>
+      <div class="days">Tuesday</div>
+      <div class="days">Wednesday</div>
+      <div class="days">Thursday</div>
+      <div class="days">Friday</div>
+    </div>
+  </body>
+  <script>
+    let container = document.querySelector(".workingDays");
+    // console.log(container);
+    // console.log(container.children); // Accessing children element of an element
+    // console.log(container.children[0]);
+    // console.log(container.children[0].innerHTML);
+
+    for (let i = 0; i < container.children.length; i++) {
+      const element = container.children[i];
+    //   console.log(element.innerHTML);
+    }
+    container.children[0].style.color = "orange";
+    // console.log(parent.lastElementChild);
+
+    let myDayOne = document.querySelector(".days");
+    // console.log(myDayOne.parentElement); // Accesing Parent and an element
+    myDayOne.nextElementSibling.style.color = "red"; // Accessing next element of an element
+
+    console.log("Node: ", container.childNodes);
+  </script>
+</html>
