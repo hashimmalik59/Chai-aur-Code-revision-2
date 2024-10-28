@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit and Remove Elements in DOM</title>
+  </head>
+  <body
+    style="
+      background-color: #000;
+      color: #fff;
+      font-family: 'Roboto', sans-serif;
+    "
+  >
+    <ul>
+      <li>JavaScript</li>
+    </ul>
+  </body>
+  <script>
+    function addLang(lang) {
+      let li = document.createElement("li");
+      li.innerHTML = lang;
+      let ul = document.querySelector("ul");
+      ul.appendChild(li);
+    }
+    addLang("Python");
+    addLang("Java");
+    addLang("C++");
+    addLang("Ruby");
+
+    function addLang2(lang2) {
+      let li = document.createElement("li");
+      let textInLI = document.createTextNode(lang2);
+      li.appendChild(textInLI);
+      let ul = document.querySelector("ul");
+      ul.appendChild(li);
+    }
+    addLang2("Golang");
+    addLang2("Swift");
+    addLang2("Kotlin");
+
+    // Edit
+    let thirdLanguage = document.querySelector("li:nth-child(3)");
+    // thirdLanguage.innerHTML = "Flutter" // not a best practice
+    let newLI = document.createElement("li");
+    newLI.textContent = "Flutter";
+    thirdLanguage.replaceWith(newLI); // best practice
+
+    // Edit
+    const fifthLanguage = document.querySelector('li:nth-child(5)')
+    fifthLanguage.outerHTML = `<li>TypeScript</li>`
+
+    // Remove
+    let fourthLanguage = document.querySelector("li:nth-child(4)");
+    fourthLanguage.remove(); // removing an element
+  </script>
+</html>
